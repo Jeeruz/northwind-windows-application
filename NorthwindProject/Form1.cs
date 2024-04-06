@@ -17,8 +17,7 @@ namespace NorthwindProject
         public frmEmployees()
         {
             InitializeComponent();
-            loadDGV(); //display data from sql database server to datagridview
-            
+            loadDGV(); //display data from sql database server to datagridview           
         }
 
         private void loadDGV()
@@ -68,8 +67,6 @@ namespace NorthwindProject
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-
             // calls dbConnect class and its function dbConnectOpen() outside the form   
             dbConnect.dbConnectOpen();
 

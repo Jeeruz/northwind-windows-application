@@ -49,32 +49,41 @@
             this.employeeID,
             this.employeeLN,
             this.employeeFN});
-            this.dgvEmployees.Location = new System.Drawing.Point(12, 12);
+            this.dgvEmployees.Location = new System.Drawing.Point(16, 15);
+            this.dgvEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvEmployees.Name = "dgvEmployees";
-            this.dgvEmployees.Size = new System.Drawing.Size(342, 264);
+            this.dgvEmployees.RowHeadersWidth = 51;
+            this.dgvEmployees.Size = new System.Drawing.Size(428, 325);
             this.dgvEmployees.TabIndex = 0;
             this.dgvEmployees.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployees_CellClick);
             // 
             // employeeID
             // 
             this.employeeID.HeaderText = "Employee ID";
+            this.employeeID.MinimumWidth = 6;
             this.employeeID.Name = "employeeID";
+            this.employeeID.Width = 125;
             // 
             // employeeLN
             // 
             this.employeeLN.HeaderText = "Last Name ";
+            this.employeeLN.MinimumWidth = 6;
             this.employeeLN.Name = "employeeLN";
+            this.employeeLN.Width = 125;
             // 
             // employeeFN
             // 
             this.employeeFN.HeaderText = "First Name";
+            this.employeeFN.MinimumWidth = 6;
             this.employeeFN.Name = "employeeFN";
+            this.employeeFN.Width = 125;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(364, 12);
+            this.btnAdd.Location = new System.Drawing.Point(451, 15);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -82,9 +91,10 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(445, 12);
+            this.btnUpdate.Location = new System.Drawing.Point(559, 15);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(100, 28);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -92,9 +102,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(526, 12);
+            this.btnDelete.Location = new System.Drawing.Point(667, 15);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(100, 28);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -103,40 +114,44 @@
             // lLastName
             // 
             this.lLastName.AutoSize = true;
-            this.lLastName.Location = new System.Drawing.Point(362, 67);
+            this.lLastName.Location = new System.Drawing.Point(449, 54);
+            this.lLastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lLastName.Name = "lLastName";
-            this.lLastName.Size = new System.Drawing.Size(58, 13);
+            this.lLastName.Size = new System.Drawing.Size(76, 17);
             this.lLastName.TabIndex = 4;
             this.lLastName.Text = "Last Name";
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(419, 64);
+            this.tbLastName.Location = new System.Drawing.Point(525, 51);
+            this.tbLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(182, 20);
+            this.tbLastName.Size = new System.Drawing.Size(241, 22);
             this.tbLastName.TabIndex = 5;
             // 
             // tbFirstName
             // 
-            this.tbFirstName.Location = new System.Drawing.Point(419, 90);
+            this.tbFirstName.Location = new System.Drawing.Point(525, 83);
+            this.tbFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(182, 20);
+            this.tbFirstName.Size = new System.Drawing.Size(241, 22);
             this.tbFirstName.TabIndex = 7;
             // 
             // lFirstName
             // 
             this.lFirstName.AutoSize = true;
-            this.lFirstName.Location = new System.Drawing.Point(362, 90);
+            this.lFirstName.Location = new System.Drawing.Point(449, 83);
+            this.lFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lFirstName.Name = "lFirstName";
-            this.lFirstName.Size = new System.Drawing.Size(54, 13);
+            this.lFirstName.Size = new System.Drawing.Size(72, 17);
             this.lFirstName.TabIndex = 6;
             this.lFirstName.Text = "FirstName";
             // 
             // frmEmployees
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 283);
+            this.ClientSize = new System.Drawing.Size(779, 348);
             this.Controls.Add(this.tbFirstName);
             this.Controls.Add(this.lFirstName);
             this.Controls.Add(this.tbLastName);
@@ -145,6 +160,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvEmployees);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmEmployees";
             this.Text = "Employees";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
